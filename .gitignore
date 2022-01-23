@@ -24,3 +24,4 @@
 /Warehouse.ItemService/appsettings.Development.json
 /Warehouse.AdminService/appsettings.Development.json
 /.vs/Warehouse
+/.editorconfig
