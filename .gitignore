@@ -1,0 +1,14 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/Warehouse/Warehouse.AdminService/bin/Debug/net6.0
+/Warehouse/Warehouse.AdminService/obj
+/Warehouse/Warehouse.AdminService/appsettings.Development.json
+/Warehouse/Warehouse.Core/bin/Debug/net6.0
+/Warehouse/Warehouse.Core/obj
+/Warehouse/Warehouse.ItemService/bin/Debug/net6.0
+/Warehouse/Warehouse.ItemService/obj
+/Warehouse/Warehouse.StockService/bin/Debug/net6.0
+/Warehouse/Warehouse.StockService/obj
+/Warehouse/.vs/Warehouse/v17
