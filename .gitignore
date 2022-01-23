@@ -12,3 +12,15 @@
 /Warehouse/Warehouse.StockService/bin/Debug/net6.0
 /Warehouse/Warehouse.StockService/obj
 /Warehouse/.vs/Warehouse/v17
+/Warehouse.StockService/obj
+/Warehouse.StockService/bin/Debug/net6.0
+/Warehouse.ItemService/obj
+/Warehouse.ItemService/bin/Debug/net6.0
+/Warehouse.Core/obj
+/Warehouse.Core/bin/Debug/net6.0
+/Warehouse.AdminService/obj
+/Warehouse.AdminService/bin/Debug/net6.0
+/Warehouse.StockService/appsettings.Development.json
+/Warehouse.ItemService/appsettings.Development.json
+/Warehouse.AdminService/appsettings.Development.json
+/.vs/Warehouse
