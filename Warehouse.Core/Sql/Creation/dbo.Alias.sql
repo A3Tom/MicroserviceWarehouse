@@ -1,0 +1,22 @@
+CREATE TABLE [dbo].[Alias]
+(
+	[Id] INT NOT NULL PRIMARY KEY IDENTITY(1,1),
+	[ItemId] INT NOT NULL,
+	[AliasName] NVARCHAR(MAX),
+	[Active] BIT NOT NULL DEFAULT 1,
+	[CreatedOn]			DATETIME DEFAULT CURRENT_TIMESTAMP NOT NULL,
+	[LastModified]			DATETIME DEFAULT CURRENT_TIMESTAMP NOT NULL, 
+
+    CONSTRAINT [FK_Item_ItemId] FOREIGN KEY (ItemId) REFERENCES [Item]([Id]),
+)
+GO
+
+CREATE TRIGGER [dbo].[trgAliasModified]
+    ON [dbo].[Alias]
+    FOR INSERT, UPDATE
+    AS
+    BEGIN
+        SET NoCount ON
+		UPDATE dbo.Alias
+		Set	LastModified = CURRENT_TIMESTAMP
+    END

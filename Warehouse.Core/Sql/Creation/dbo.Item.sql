@@ -1,0 +1,19 @@
+﻿CREATE TABLE [dbo].[Item] (
+	[Id] INT NOT NULL PRIMARY KEY IDENTITY(1, 1),
+	[Name] NVARCHAR(256) NOT NULL,
+	[Description] NVARCHAR(MAX),
+	
+	[Active] BIT NOT NULL DEFAULT 1,
+	[CreatedOn]			DATETIME DEFAULT CURRENT_TIMESTAMP NOT NULL,
+	[LastModified]			DATETIME DEFAULT CURRENT_TIMESTAMP NOT NULL, 
+)
+
+CREATE TRIGGER [dbo].[trgItemModified]
+    ON [dbo].[Item]
+    FOR INSERT, UPDATE
+    AS
+    BEGIN
+        SET NoCount ON
+		UPDATE dbo.Item
+		Set	LastModified = CURRENT_TIMESTAMP
+    END
